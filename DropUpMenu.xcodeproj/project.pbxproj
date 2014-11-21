@@ -15,7 +15,6 @@
 		D67D3D011A198B7200C80628 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67D3CFF1A198B7200C80628 /* LaunchScreen.xib */; };
 		D67D3D0D1A198B7200C80628 /* DropUpMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D67D3D0C1A198B7200C80628 /* DropUpMenuTests.m */; };
 		D67D3D191A1A2C2600C80628 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D67D3D181A1A2C2600C80628 /* MenuView.m */; };
-		D67D3D1C1A1A2C7500C80628 /* UpMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D67D3D1B1A1A2C7500C80628 /* UpMenuView.m */; };
 		D67D3D1F1A1A375400C80628 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D67D3D1E1A1A375400C80628 /* MenuItem.m */; };
 		D6A877801A1F0198003F9CB4 /* GWDropUpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A8777F1A1F0198003F9CB4 /* GWDropUpCell.m */; };
 /* End PBXBuildFile section */
@@ -46,8 +45,6 @@
 		D67D3D0C1A198B7200C80628 /* DropUpMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropUpMenuTests.m; sourceTree = "<group>"; };
 		D67D3D171A1A2C2600C80628 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		D67D3D181A1A2C2600C80628 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
-		D67D3D1A1A1A2C7500C80628 /* UpMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpMenuView.h; sourceTree = "<group>"; };
-		D67D3D1B1A1A2C7500C80628 /* UpMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpMenuView.m; sourceTree = "<group>"; };
 		D67D3D1D1A1A375400C80628 /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
 		D67D3D1E1A1A375400C80628 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
 		D6A8777E1A1F0198003F9CB4 /* GWDropUpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWDropUpCell.h; sourceTree = "<group>"; };
@@ -139,8 +136,6 @@
 				D6A8777F1A1F0198003F9CB4 /* GWDropUpCell.m */,
 				D67D3D171A1A2C2600C80628 /* MenuView.h */,
 				D67D3D181A1A2C2600C80628 /* MenuView.m */,
-				D67D3D1A1A1A2C7500C80628 /* UpMenuView.h */,
-				D67D3D1B1A1A2C7500C80628 /* UpMenuView.m */,
 				D67D3D1D1A1A375400C80628 /* MenuItem.h */,
 				D67D3D1E1A1A375400C80628 /* MenuItem.m */,
 			);
@@ -249,7 +244,6 @@
 			files = (
 				D67D3CF91A198B7200C80628 /* ViewController.m in Sources */,
 				D67D3D191A1A2C2600C80628 /* MenuView.m in Sources */,
-				D67D3D1C1A1A2C7500C80628 /* UpMenuView.m in Sources */,
 				D67D3D1F1A1A375400C80628 /* MenuItem.m in Sources */,
 				D6A877801A1F0198003F9CB4 /* GWDropUpCell.m in Sources */,
 				D67D3CF61A198B7200C80628 /* AppDelegate.m in Sources */,
