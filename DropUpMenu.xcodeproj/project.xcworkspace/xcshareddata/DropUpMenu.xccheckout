@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D59EDC0F-84A8-41FA-AABE-1C1643F7254E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DropUpMenu</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>54F09815519040E475FE133AA5599E0A369E3E32</key>
+		<string>github.com:wanggang316/DropUpMenu.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DropUpMenu.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>54F09815519040E475FE133AA5599E0A369E3E32</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:wanggang316/DropUpMenu.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>54F09815519040E475FE133AA5599E0A369E3E32</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>54F09815519040E475FE133AA5599E0A369E3E32</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DropUpMenu</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -19,10 +19,12 @@
     [super viewDidLoad];
     
     MenuView *menuView = [[MenuView alloc]init];
-    menuView.frame = CGRectMake(0, 200, 320, 44);
+    menuView.frame = CGRectMake(0, 568-44, 320, 44);
+    [menuView setTitles:@[@"工业", @"经济", @"信息化"] images:@[@"bottom_btn",@"bottom_btn",@"bottom_btn"]];
     [self.view addSubview:menuView];
     
 //    [self addToolbar];
+    
 }
 
 -(void)addToolbar

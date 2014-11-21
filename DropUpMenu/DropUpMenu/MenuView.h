@@ -18,9 +18,11 @@
 - (UIColor *)backgroundColor;
 
 //custom methods
-@property (nonatomic, copy) NSArray *items;
 
 @property (nonatomic, weak) id<MenuViewDelegate> delegate;
+
+
+- (void)setTitles:(NSArray *)titles images:(NSArray *)images;
 
 @end
 
