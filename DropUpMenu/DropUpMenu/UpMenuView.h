@@ -10,4 +10,6 @@
 
 @interface UpMenuView : UITableView
 
+@property (nonatomic, strong) NSArray *items;
+
 @end

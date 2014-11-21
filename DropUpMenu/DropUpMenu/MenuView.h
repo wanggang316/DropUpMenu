@@ -12,22 +12,26 @@
 
 @interface MenuView : UIView
 
-//override methods
-- (instancetype)init;
-- (instancetype)initWithFrame:(CGRect)frame;
-- (UIColor *)backgroundColor;
-
 //custom methods
 
 @property (nonatomic, weak) id<MenuViewDelegate> delegate;
 
+//主菜单数据
+@property (nonatomic, strong) NSArray *bottomItems;
+//显示视图
+@property (nonatomic, strong) UIView *displayView;
 
-- (void)setTitles:(NSArray *)titles images:(NSArray *)images;
+//隐藏滑出菜单
+- (void)hiddenItemTable;
+
 
 @end
 
 
 @protocol MenuViewDelegate <NSObject>
 
+- (NSArray *)upMenuItemsAtBottomIndex:(NSInteger)index;
+
+- (void)selectedUpMenuItemAtIndex:(NSInteger)upItemIndex bottomIndex:(NSInteger)bottomIndex;
 
 @end

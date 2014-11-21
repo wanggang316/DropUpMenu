@@ -17,6 +17,7 @@
 		D67D3D191A1A2C2600C80628 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D67D3D181A1A2C2600C80628 /* MenuView.m */; };
 		D67D3D1C1A1A2C7500C80628 /* UpMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = D67D3D1B1A1A2C7500C80628 /* UpMenuView.m */; };
 		D67D3D1F1A1A375400C80628 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D67D3D1E1A1A375400C80628 /* MenuItem.m */; };
+		D6A877801A1F0198003F9CB4 /* GWDropUpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A8777F1A1F0198003F9CB4 /* GWDropUpCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		D67D3D1B1A1A2C7500C80628 /* UpMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpMenuView.m; sourceTree = "<group>"; };
 		D67D3D1D1A1A375400C80628 /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
 		D67D3D1E1A1A375400C80628 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
+		D6A8777E1A1F0198003F9CB4 /* GWDropUpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWDropUpCell.h; sourceTree = "<group>"; };
+		D6A8777F1A1F0198003F9CB4 /* GWDropUpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWDropUpCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 		D67D3D161A198BA700C80628 /* DropUpMenu */ = {
 			isa = PBXGroup;
 			children = (
+				D6A8777E1A1F0198003F9CB4 /* GWDropUpCell.h */,
+				D6A8777F1A1F0198003F9CB4 /* GWDropUpCell.m */,
 				D67D3D171A1A2C2600C80628 /* MenuView.h */,
 				D67D3D181A1A2C2600C80628 /* MenuView.m */,
 				D67D3D1A1A1A2C7500C80628 /* UpMenuView.h */,
@@ -246,6 +251,7 @@
 				D67D3D191A1A2C2600C80628 /* MenuView.m in Sources */,
 				D67D3D1C1A1A2C7500C80628 /* UpMenuView.m in Sources */,
 				D67D3D1F1A1A375400C80628 /* MenuItem.m in Sources */,
+				D6A877801A1F0198003F9CB4 /* GWDropUpCell.m in Sources */,
 				D67D3CF61A198B7200C80628 /* AppDelegate.m in Sources */,
 				D67D3CF31A198B7200C80628 /* main.m in Sources */,
 			);
@@ -438,6 +444,7 @@
 				D67D3D121A198B7200C80628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D67D3D131A198B7200C80628 /* Build configuration list for PBXNativeTarget "DropUpMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +453,7 @@
 				D67D3D151A198B7200C80628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

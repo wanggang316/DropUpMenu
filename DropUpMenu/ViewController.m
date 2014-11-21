@@ -9,7 +9,9 @@
 #import "ViewController.h"
 #import "MenuView.h"
 
-@interface ViewController ()
+@interface ViewController () <MenuViewDelegate>
+
+@property (nonatomic, strong) NSArray *allUpDatas;
 
 @end
 
@@ -20,60 +22,26 @@
     
     MenuView *menuView = [[MenuView alloc]init];
     menuView.frame = CGRectMake(0, 568-44, 320, 44);
-    [menuView setTitles:@[@"工业", @"经济", @"信息化"] images:@[@"bottom_btn",@"bottom_btn",@"bottom_btn"]];
+    [menuView setBottomItems:@[@"工业", @"评论", @"信息化"]];
+    menuView.displayView = self.view;
+    menuView.delegate = self;
     [self.view addSubview:menuView];
     
-//    [self addToolbar];
     
+    NSArray *up1 = @[@"IT评论",@"产业评论",@"经济评论",@"管理评论",@"融合",@"上策",@"跨界"];
+    NSArray *up2 = @[@"装备制造", @"消费品", @"原材料", @"汽车", @"节能环保", @"新能源"];
+    NSArray *up3 = @[@"电子信息", @"半导体", @"通信", @"互联网", @"软件"];
+    self.allUpDatas = @[up1, up2, up3];
 }
 
--(void)addToolbar
-{
-    UIBarButtonItem *spaceItem = [[UIBarButtonItem alloc]
-                                  initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-                                  target:nil action:nil];
-    spaceItem.width = 5;
-    
-    UIBarButtonItem *customItem1 = [[UIBarButtonItem alloc]initWithTitle:@"精品" style:UIBarButtonItemStylePlain
-                                    target:self action:@selector(barButtonItemHandler:)];
-    UIBarButtonItem *customItem2 = [[UIBarButtonItem alloc]
-                                    initWithTitle:@"工业" style:UIBarButtonItemStylePlain
-                                    target:self action:@selector(barButtonItemHandler:)];
-    UIBarButtonItem *customItem3 = [[UIBarButtonItem alloc]
-                                    initWithTitle:@"信息化" style:UIBarButtonItemStylePlain
-                                    target:self action:@selector(barButtonItemHandler:)];
-    
-    customItem1.width = 100;
-    customItem2.width = 100;
-    customItem3.width = 100;
-    customItem1.tintColor = [UIColor darkGrayColor];
-    customItem2.tintColor = [UIColor darkGrayColor];
-    customItem3.tintColor = [UIColor darkGrayColor];
-    
-    spaceItem.tintColor = [UIColor blackColor];
-    
-    NSArray *toolbarItems = [NSArray arrayWithObjects:spaceItem,
-                             customItem1,spaceItem, customItem2,spaceItem, customItem3, nil];
-
-    
-    UIToolbar *toolbar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 366+54, 320, 44)];
-    toolbar.backgroundColor = [UIColor brownColor];
-    [toolbar setBarStyle:UIBarStyleDefault];
-    [self.view addSubview:toolbar];
-    [toolbar setItems:toolbarItems];
-    
-    
-    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 50, 40)];
-    label.backgroundColor = [UIColor redColor];
-    
-    [toolbar addSubview: label];
+#pragma mark - delegate methods
+- (NSArray *)upMenuItemsAtBottomIndex:(NSInteger)index {
+    return self.allUpDatas[index];
 }
 
-
-- (void)barButtonItemHandler:(id)sender {
-    
+- (void)selectedUpMenuItemAtIndex:(NSInteger)upItemIndex bottomIndex:(NSInteger)bottomIndex {
+    NSLog(@"bottom index is : %d, up index is : %d", bottomIndex, upItemIndex);
 }
-
 
 
 - (void)didReceiveMemoryWarning {
