@@ -1,7 +1,7 @@
 DropUpMenu
 -----------
 
-![screen](./screen/screen.png)
+![screen](./screen/screen.PNG)
 
 
 
